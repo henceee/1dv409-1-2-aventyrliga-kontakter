@@ -34,8 +34,8 @@ namespace AdventurousContacts.Controllers
         // GET: /Contact/
          public ActionResult Index()
         {
-
-            return View("Index", _repository.FindAllContacts());           
+            throw new Exception("kasdfjs");
+           // return View("Index", _repository.GetLastContacts());       
         }
 
          //
@@ -56,7 +56,8 @@ namespace AdventurousContacts.Controllers
                  {
                      _repository.Add(contact);
                      _repository.Save();
-                     TempData["sucess"] = "Contact saved.";
+                     TempData["sucess"] = string.Format("{0} {1} ({2}) saved.",
+                                                        contact.FirstName, contact.LastName,contact.EmailAddress);
                      return RedirectToAction("Index");
                  }
                  catch (DataException)
@@ -67,10 +68,7 @@ namespace AdventurousContacts.Controllers
              return View();
          }
 
-        //TODO: Implement ContactController.Delete(int id=0) : ActionResult
-
-        //TODO: Implement ContactController.DeleteContirmed(int? id) : ActionResult
-
+        
 
          //GET: /Contact(Delete/ID
          public ActionResult Delete(int? id)
@@ -101,7 +99,7 @@ namespace AdventurousContacts.Controllers
                  var contactToDelete = new Contact { ContactID = id };
                  _repository.Delete(contactToDelete);
                  _repository.Save();
-                 TempData["sucess"] = "Contact deleted.";
+                 TempData["sucess"] = TempData["sucess"] = "Contact deleted."; 
                  
                  return RedirectToAction("Index");
              }

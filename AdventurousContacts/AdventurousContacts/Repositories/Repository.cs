@@ -39,10 +39,9 @@ namespace AdventurousContacts.Repositories
             return _entities.Contact.Find(contactId);
         }
 
-        public IList<Contact> GetLastContact(int count = 20)
+        public IList<Contact> GetLastContacts(int count = 20)
         {
-            //TODO: Implement Models.Repository.GetLastContact(int count = 20)
-            throw new NotImplementedException();
+            return _entities.Contact.OrderByDescending(c=>c.ContactID).Take(count).ToList();
         }
 
         public void Save()

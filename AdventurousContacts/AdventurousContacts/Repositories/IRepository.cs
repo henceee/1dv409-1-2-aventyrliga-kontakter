@@ -13,7 +13,7 @@ namespace AdventurousContacts.Repositories
         void Delete(Contact contact);
         IQueryable FindAllContacts();
         Contact GetContactById(int contactId);
-        IList<Contact> GetLastContact(int count=20);
+        IList<Contact> GetLastContacts(int count=20);
         void Save();
         void Update(Contact contact);
     }
