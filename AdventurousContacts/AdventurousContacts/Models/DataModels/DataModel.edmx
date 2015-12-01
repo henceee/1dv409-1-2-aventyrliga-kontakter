@@ -103,11 +103,6 @@
             </EntityTypeMapping>
             <EntityTypeMapping TypeName="dv409_AdventureWorksAssignmentModel.Contact">
               <ModificationFunctionMapping>
-                <InsertFunction FunctionName="dv409_AdventureWorksAssignmentModel.Store.uspAddContact_SELECT">
-                  <ScalarProperty Name="EmailAddress" ParameterName="EmailAddress" />
-                  <ScalarProperty Name="LastName" ParameterName="LastName" />
-                  <ScalarProperty Name="FirstName" ParameterName="FirstName" />
-                </InsertFunction>
                 <DeleteFunction FunctionName="dv409_AdventureWorksAssignmentModel.Store.uspRemoveContact">
                   <ScalarProperty Name="ContactID" ParameterName="ContactID" />
                 </DeleteFunction>
@@ -117,6 +112,12 @@
                   <ScalarProperty Name="FirstName" ParameterName="FirstName" Version="Current" />
                   <ScalarProperty Name="ContactID" ParameterName="ContactID" Version="Current" />
                 </UpdateFunction>
+                <InsertFunction FunctionName="dv409_AdventureWorksAssignmentModel.Store.uspAddContact_SELECT">
+                  <ScalarProperty Name="EmailAddress" ParameterName="EmailAddress" />
+                  <ScalarProperty Name="LastName" ParameterName="LastName" />
+                  <ScalarProperty Name="FirstName" ParameterName="FirstName" />
+                  <ResultBinding Name="ContactID" ColumnName="ContactID:int" />
+                </InsertFunction>
               </ModificationFunctionMapping>
             </EntityTypeMapping>
           </EntitySetMapping>

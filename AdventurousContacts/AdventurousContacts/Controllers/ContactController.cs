@@ -34,8 +34,8 @@ namespace AdventurousContacts.Controllers
         // GET: /Contact/
          public ActionResult Index()
         {
-            throw new Exception("kasdfjs");
-           // return View("Index", _repository.GetLastContacts());       
+            //throw new Exception("kasdfjs");
+            return View("Index", _repository.GetLastContacts());       
         }
 
          //

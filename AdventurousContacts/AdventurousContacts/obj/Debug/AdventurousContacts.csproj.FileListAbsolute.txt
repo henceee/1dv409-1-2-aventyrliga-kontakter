@@ -27,3 +27,5 @@ C:\Users\hg222dv\Documents\GitHub\1dv409-1-2-aventyrliga-kontakter\AdventurousCo
 C:\Users\hg222dv\Documents\GitHub\1dv409-1-2-aventyrliga-kontakter\AdventurousContacts\AdventurousContacts\bin\System.Web.WebPages.Razor.xml
 C:\Users\hg222dv\Documents\GitHub\1dv409-1-2-aventyrliga-kontakter\AdventurousContacts\AdventurousContacts\obj\Debug\AdventurousContacts.dll
 C:\Users\hg222dv\Documents\GitHub\1dv409-1-2-aventyrliga-kontakter\AdventurousContacts\AdventurousContacts\obj\Debug\AdventurousContacts.pdb
+C:\Users\hg222dv\Documents\GitHub\1dv409-1-2-aventyrliga-kontakter\AdventurousContacts\AdventurousContacts\bin\NotFoundMvc.dll
+C:\Users\hg222dv\Documents\GitHub\1dv409-1-2-aventyrliga-kontakter\AdventurousContacts\AdventurousContacts\obj\Debug\AdventurousContacts.csprojResolveAssemblyReference.cache
